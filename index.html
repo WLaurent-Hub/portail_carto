@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link 
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+      rel="stylesheet"
+     />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/checkbox/dist/mdc.checkbox.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/icon-button/dist/mdc.icon-button.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <script src='https://unpkg.com/maplibre-gl@2.1.1/dist/maplibre-gl.js'></script>
+    <link href='https://unpkg.com/maplibre-gl@2.1.1/dist/maplibre-gl.css' rel='stylesheet' />
+    
+
+
+
+    <title>Portail cartographique</title>
+</head>
+<body>
+    <!-- en-tête -->
+    <section class="wrapper">
+        <header class="header">
+            <div class="header-right">
+                <h3 style="font-weight: 600;">Portail cartographique</h3>
+            </div>
+            <div class="header-center">
+                <img style="width:100px;" src="image/logo_p8.png">
+            </div>
+            
+
+      </header>
+    </section>
+
+    <!-- corps -->
+
+    <main class="main-content">
+            <div class="title-card">
+                <p>Évolution des surfaces agricoles dans l'agglomération du pays de Meaux entre 2007 et 2021</p>
+            </div>
+
+            <div class="risk-cards">
+                <div class="card" style="padding: 0px 25px 5px 15px;">
+                    <p class="card-legend">Légende</p>
+                    <div class="mdc-form-field">
+                        <div class="mdc-checkbox">
+                          <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox1">
+                          <div class="mdc-checkbox__background">
+                            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                              <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                            </svg>
+                            <div class="mdc-checkbox__mixedmark"></div>
+                          </div>
+                        </div>
+                        <label style='font-size:1rem' for="checkbox1">CA du pays de Meaux</label>
+                      </div>
+                    <div class="mdc-form-field">
+                      <div class="mdc-checkbox">
+                        <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox2">
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                      </div>
+                      <label style='font-size:1rem'for="checkbox2">Parcelles agricoless en 2007</label>
+                    </div>
+                  
+                    <div class="mdc-form-field">
+                      <div class="mdc-checkbox">
+                        <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox3">
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                      </div>
+                      <label style='font-size:1rem' for="checkbox3">Parcelles agricoless en 2021</label>
+                    </div>
+                  
+                    <div class="mdc-form-field">
+                      <div class="mdc-checkbox">
+                        <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox4">
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                      </div>
+                      <label style='font-size:1rem' for="checkbox4">Évolution entre 2007 et 2021</label>
+                    </div>
+
+                    <div class="mdc-form-field">
+                      <div class="mdc-checkbox">
+                        <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox5">
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                      </div>
+                      <label style='font-size:1rem' for="checkbox5">Parcelles disparues entre 2007 et 2021</label>
+                    </div>
+
+                    <hr width="100%">
+                    <div style="padding:10px;">Carte en format PDF</div>
+                    <div class="mdc-form-fields">
+                        <div class="mdc-center-colum">
+                        <a href="/cartes/2007.pdf" class="download-link" download>
+                          <i class="material-icons mdc-icon-button mdc-icon-button--on">file_download</i>
+                          <span style="font-size: 1rem;">Parcelles agricoles 2007</span>
+                        </a>
+                        <a href="/cartes/2021.pdf" class="download-link" download>
+                            <i class="material-icons mdc-icon-button mdc-icon-button--on">file_download</i>
+                            <span style="font-size: 1rem;">Parcelles agricoles 2021</span>
+                        </a>
+                        <a href="/cartes/EVO.pdf" class="download-link" download>
+                            <i class="material-icons mdc-icon-button mdc-icon-button--on">file_download</i>
+                            <span style="font-size: 1rem;">Évolution entre 2007 et 2021</span>
+                        </a>
+                        <a href="/cartes/PP.pdf" class="download-link" download>
+                          <i class="material-icons mdc-icon-button mdc-icon-button--on">file_download</i>
+                          <span style="font-size: 1rem;">Parcelles agricoles disparues</span>
+                      </a>
+                        </div>
+                      </div>
+
+                      <hr width="100%">
+                      <div style="padding:10px;">Méthodologie</div>
+                      <div class="mdc-center-colum">
+                        <a href="#" class="download-link">
+                          <i class="material-icons mdc-icon-button mdc-icon-button--on">file_download</i>
+                          <span style="font-size: 1rem;">PowerPoint méthodologie </span>
+                        </a>
+                    </div>
+                  </div>
+
+                <div class="card">
+                  <div class="map-container">
+                    <div id="map"></div>
+                    <div id="legend-commune" class="legend-container">
+                      <div class="legend-item">
+                        <span class="legend-color" style="background-color: red;"></span>
+                        <span class="legend-label">Commune</span>
+                      </div>
+                       <div class="legend-item">
+                        <span class="legend-color" style="border: 1px solid black;"></span>
+                        <span class="legend-label">Contour commune</span>
+                      </div>
+                    </div>
+                    <div id="legend-2007" class="legend-container">
+                      <div class="legend-item">
+                        <span class="legend-color" style="background-color: green;"></span>
+                        <span class="legend-label">Parcelles 2007</span>
+                      </div>
+                       <div class="legend-item">
+                        <span class="legend-color" style="border: 1px solid black;"></span>
+                        <span class="legend-label">Contour parcelles</span>
+                      </div>
+                    </div>
+                    <div id="legend-2021" class="legend-container">
+                      <div class="legend-item">
+                        <span class="legend-color" style="background-color: green;"></span>
+                        <span class="legend-label">Parcelles 2021</span>
+                      </div>
+                       <div class="legend-item">
+                        <span class="legend-color" style="border: 1px solid black;"></span>
+                        <span class="legend-label">Contour parcelles</span>
+                      </div>
+                    </div>
+                    <div id="legend-evolution" class="legend-container">
+                      <div class="legend-item">
+                        <span class="legend-color" style="background-color: red;"></span>
+                        <span class="legend-label">Parcelles 2007</span>
+                      </div>
+                       <div class="legend-item">
+                        <span class="legend-color" style="background-color: green;"></span>
+                        <span class="legend-label">Parcelles 2021</span>
+                      </div>
+                    </div>
+                    <div id="legend-perdu" class="legend-container">
+                      <div class="legend-item">
+                        <span class="legend-color" style="background-color: red;"></span>
+                        <span class="legend-label">Parcelles perdues entre 2007 et 2021</span>
+                      </div>
+                       <div class="legend-item">
+                        <span class="legend-color" style="border: 1px solid black;"></span>
+                        <span class="legend-label">Contour commune</span>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- <div class='map-overlay' id='legend'><hR><h3><b>311 - Type of report</b></h3> <hR><br> </div> -->
+
+                </div>
+
+            </div>
+    </main>
+</body>
+<script src="js/app.js"></script>
+</html>
