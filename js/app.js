@@ -108,6 +108,16 @@ var map = new maplibregl.Map({
           }
           });
           map.setLayoutProperty('parcel_perdu', 'visibility', 'none');
+    map.addLayer({
+      'id': 'outline_parcel_perdu',
+      'type': 'line',
+      'source': 'parcel_perdu',
+      'paint': {
+      'line-color': 'black',
+      'line-opacity': 0.7
+      }
+      });
+      map.setLayoutProperty('outline_parcel_perdu', 'visibility', 'none');
     });
            
     var checkbox1 = document.getElementById('checkbox1');
@@ -185,6 +195,7 @@ var map = new maplibregl.Map({
           map.setLayoutProperty('parcel_perdu', 'visibility', 'visible');
           map.setLayoutProperty('outline_commune', 'visibility', 'visible');
           map.setLayoutProperty('outline_parcel_perdu', 'visibility', 'visible');
+          map.setLayoutProperty('outline_parcel_perdu', 'visibility', 'visible');
 
         } else {
           legend5.style.display = 'none'; // Masquer la légende
@@ -192,6 +203,7 @@ var map = new maplibregl.Map({
           // La checkbox n'est pas cochée, masquez la couche
           map.setLayoutProperty('parcel_perdu', 'visibility', 'none');
           map.setLayoutProperty('outline_commune', 'visibility', 'none');
+          map.setLayoutProperty('outline_parcel_perdu', 'visibility', 'none');
           map.setLayoutProperty('outline_parcel_perdu', 'visibility', 'none');
         }
       });
