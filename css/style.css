@@ -10,7 +10,6 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-columns: 260px 1fr 1fr 1fr; */
   grid-template-areas:
     "header header header"
     "main main main";
@@ -49,7 +48,6 @@ body {
   display: grid;
   grid-template-columns: 0.5fr 1.75fr;
   gap: 30px;
-  /* Espacement entre les cards */
   margin: 20px 0;
   height: 680px;
 }
@@ -58,7 +56,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* padding: 15px 25px 25px 15px; */
   background-color: #ffffff;
   box-sizing: border-box;
   border: 1px solid #d2d2d3;
@@ -136,17 +133,13 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  /* Ajustez la hauteur de la carte selon vos besoins */
 }
-
 
 .legend-container {
   position: absolute;
   display: none;
   top: 10px;
-  /* Ajustez la position verticale de la légende */
   left: 10px;
-  /* Ajustez la position horizontale de la légende */
   background-color: white;
   padding: 10px;
   border: 1px solid #ccc;
