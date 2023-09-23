@@ -1,154 +1,159 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #eeeeee;
-    color: #232323;
-   font-family: Arial, Helvetica, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+  color: #232323;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-.wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: 260px 1fr 1fr 1fr; */
-    grid-template-areas:
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: 260px 1fr 1fr 1fr; */
+  grid-template-areas:
     "header header header"
     "main main main";
 }
 
-.header {
-    grid-area: header;
-    height: 70px;
-    background-color: #1c244f;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px 0 30px;
-    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
-    text-align:center;
-    color:white;
-    letter-spacing: 0.2em;
+.wrapper__header {
+  grid-area: header;
+  height: 70px;
+  background-color: #1c244f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  letter-spacing: 0.2em;
 }
 
-  /* main */
+/* main */
 
-.main-content{
-    grid-area:main;
-    padding:20px 20px;
-    overflow-y: auto;
+.main {
+  grid-area: main;
+  padding: 20px 20px;
+  overflow-y: auto;
 }
 
-.title-card{
-    display: flex; 
-    justify-content: space-between;
-    font-weight: 600;
-    text-transform: uppercase;
-} 
-
-.risk-cards {
-    display: grid;
-    grid-template-columns: 0.5fr 1.75fr;
-    gap: 30px; /* Espacement entre les cards */
-    margin: 20px 0;
-    height: 680px;
+.main__title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* padding: 15px 25px 25px 15px; */
-    background-color: #ffffff;
-    box-sizing: border-box;
-    border: 1px solid #d2d2d3;
-    border-radius: 5px;
-    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
-  }
+.legend {
+  display: grid;
+  grid-template-columns: 0.5fr 1.75fr;
+  gap: 30px;
+  /* Espacement entre les cards */
+  margin: 20px 0;
+  height: 680px;
+}
 
-  
+.legend__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* padding: 15px 25px 25px 15px; */
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #d2d2d3;
+  border-radius: 5px;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+
 .card-inner p {
-    font-size: 15px;
+  font-size: 15px;
 }
 
-.card-legend {
-    font-size: 18px;
-    margin-bottom: 25px; /* Espacement entre la légende et les checkboxes */
+.lecontent-card {
+  font-size: 18px;
+  margin-bottom: 25px;
+  /* Espacement entre la légende et les checkboxes */
 }
 
 .mdc-form-fields {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-  
-  .mdc-form-field .mdc-checkbox {
-    margin-right: 10px;
-  }
-  
-  .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background .mdc-checkbox__checkmark {
-    stroke: #2196F3;
-  }
-  
-  .mdc-checkbox__background .mdc-checkbox__checkmark {
-    stroke: #ccc;
-  }
-  
-  .mdc-checkbox__background .mdc-checkbox__mixedmark {
-    background-color: #ccc;
-  }
-  
-  .mdc-checkbox__native-control:disabled ~ .mdc-checkbox__background {
-    opacity: 0.5;
-    pointer-events: none;
-  }
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.mdc-form-field .mdc-checkbox {
+  margin-right: 10px;
+}
+
+.mdc-checkbox__native-control:checked~.mdc-checkbox__background .mdc-checkbox__checkmark {
+  stroke: #2196F3;
+}
+
+.mdc-checkbox__background .mdc-checkbox__checkmark {
+  stroke: #ccc;
+}
+
+.mdc-checkbox__background .mdc-checkbox__mixedmark {
+  background-color: #ccc;
+}
+
+.mdc-checkbox__native-control:disabled~.mdc-checkbox__background {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 
-  .mdc-form-field {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .download-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .download-link i {
-    margin-right: 10px;
-  }
-  
-  .download-link:hover i {
-    color: #2196F3;
-  }
+.mdc-form-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.download-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.download-link i {
+  margin-right: 10px;
+}
+
+.download-link:hover i {
+  color: #2196F3;
+}
 
 
-#map{
-    width:100%;
-    height:100%;
+#map {
+  width: 100%;
+  height: 100%;
 }
 
 .map-container {
   position: relative;
   width: 100%;
-  height: 100%; /* Ajustez la hauteur de la carte selon vos besoins */
+  height: 100%;
+  /* Ajustez la hauteur de la carte selon vos besoins */
 }
 
 
 .legend-container {
   position: absolute;
   display: none;
-  top: 10px; /* Ajustez la position verticale de la légende */
-  left: 10px; /* Ajustez la position horizontale de la légende */
+  top: 10px;
+  /* Ajustez la position verticale de la légende */
+  left: 10px;
+  /* Ajustez la position horizontale de la légende */
   background-color: white;
   padding: 10px;
   border: 1px solid #ccc;
   font-family: Arial, sans-serif;
 }
 
-.legend-item {
+.legend-container__legend-item {
   margin-bottom: 5px;
 }
 
@@ -161,27 +166,31 @@ body {
 .legend-label {
   margin-left: 5px;
 }
+
 @media screen and (max-width: 998px) {
-   .risk-cards{
+  .legend {
     grid-template-columns: 1fr;
     gap: 10px;
     margin-bottom: 0;
-   }
+  }
 
-   #map{
-    height:60vh;
-   }
+  #map {
+    height: 60vh;
+  }
 }
+
 @media screen and (max-width: 548px) {
-    img{
-        display:none;
-    }
-    .header{
-        text-align: right;
-        align-items: right;
-        padding:10px 25px 5px 5px;
-    }
-    .header-center{
-        font-size: 12px; 
-    }
+  img {
+    display: none;
+  }
+
+  .header {
+    text-align: right;
+    align-items: right;
+    padding: 10px 25px 5px 5px;
+  }
+
+  .wrapper_header--header-center {
+    font-size: 12px;
+  }
 }
