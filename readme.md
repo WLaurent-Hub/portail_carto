@@ -39,7 +39,7 @@ An analytic synthesis is located in this path:
 
 ## Run locally
 
-1. Cloner le projet : git clone `https://github.com/WLaurent-Hub/evolution-agricultural-land_map-portal.git`
+1. Clone the project : git clone `https://github.com/WLaurent-Hub/evolution-agricultural-land_map-portal.git`
 
 2. Run index.html with live server or local server:
 <pre>
