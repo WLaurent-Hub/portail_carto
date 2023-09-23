@@ -12,7 +12,7 @@ This evolution is characterized by several polygon layers:
 
 Each polygon's geojson layer is located in :
 <pre>
-📦src
+📦evolution-agricultural-land_map-portal
  ┣ 📂data
  ┃ ┣ 📜communes.geojson
  ┃ ┣ 📜parcel_2007.geojson
@@ -22,7 +22,7 @@ Each polygon's geojson layer is located in :
 
 The layers are also represented as static maps created with QGIS in PDF format:
 <pre>
-📦src
+📦evolution-agricultural-land_map-portal
  ┣ 📂cartes
  ┃ ┣ 📜2007.pdf
  ┃ ┣ 📜2021.pdf
@@ -32,7 +32,7 @@ The layers are also represented as static maps created with QGIS in PDF format:
 
 An analytic synthesis is located in this path:
 <pre>
-📦src
+📦evolution-agricultural-land_map-portal
  ┣ 📂cartes
  ┃ ┗ 📜rapport.pdf
 </pre>
@@ -43,6 +43,6 @@ An analytic synthesis is located in this path:
 
 2. Run index.html with live server or local server:
 <pre>
-📦src
+📦evolution-agricultural-land_map-portal
 ┣ 📜index.html
 </pre>
