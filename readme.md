@@ -2,7 +2,7 @@
 
 ## Presentation
 
-This map portal summarizes the evolution of agricultural land in the Pays de Meaux conurbation between 2007 and 2021.
+This map portal summarizes the **evolution of agricultural land in the Pays de Meaux** conurbation between 2007 and 2021.
 
 This evolution is characterized by several polygon layers:
 - commune layer of the Pays de Meaux
@@ -39,9 +39,13 @@ An analytic synthesis is located in this path:
 
 ## Run locally
 
-1. Clone the project : git clone `https://github.com/WLaurent-Hub/evolution-agricultural-land_map-portal.git`
+1. Clone the project :
 
-2. Run index.html with live server or local server:
+```bash
+git clone `https://github.com/WLaurent-Hub/evolution-agricultural-land_map-portal.git`
+```
+
+3. Run index.html with live server or local server:
 <pre>
 📦evolution-agricultural-land_map-portal
 ┣ 📜index.html
