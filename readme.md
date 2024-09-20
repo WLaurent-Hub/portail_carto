@@ -42,7 +42,7 @@ An analytic synthesis is located in this path:
 1. Clone the project :
 
 ```bash
-git clone https://github.com/WLaurent-Hub/evolution-agricultural-land_map-portal.git
+git clone https://github.com/wulaurent/evolution-agricultural-land_map-portal.git
 cd evolution-agricultural-land_map-portal
 ```
 
